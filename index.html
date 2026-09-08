@@ -189,7 +189,6 @@ function CartProvider({ children }) {
       if (existing) return prev.map((i) => (i.key === key ? { ...i, qty: i.qty + 1 } : i));
       return [...prev, { key, id: entry.id, kind: entry.kind, name: entry.name, price: entry.price, qty: 1 }];
     });
-    setIsOpen(true);
   }, []);
 
   const updateQty = useCallback((key, delta) => {
@@ -815,13 +814,26 @@ function MenuSection() {
 function Cart() {
   const { items, updateQty, removeItem, total, isOpen, setIsOpen, clearCart, orderNote, setOrderNote } = useCart();
   const { customerName, setProfileOpen } = useSession();
+  const [pendingCheckout, setPendingCheckout] = useState(false);
 
-  if (!isOpen) return null;
+  useEffect(() => {
+    if (pendingCheckout && customerName) {
+      openWhatsAppOrder(customerName, items, total, orderNote);
+      setPendingCheckout(false);
+    }
+  }, [pendingCheckout, customerName]);
 
   const handleCheckout = () => {
-    if (!customerName) { setIsOpen(false); setProfileOpen(true); return; }
+    if (!customerName) {
+      setPendingCheckout(true);
+      setIsOpen(false);
+      setProfileOpen(true);
+      return;
+    }
     openWhatsAppOrder(customerName, items, total, orderNote);
   };
+
+  if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-40 flex justify-end bg-black/50" onClick={() => setIsOpen(false)}>
