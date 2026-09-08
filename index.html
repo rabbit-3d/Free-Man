@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Free Man Pizzería</title>
+<meta name="description" content="Pizzería de barrio. Pizzas, empanadas y promos. Pedís por WhatsApp." />
+<link rel="icon" href="data:image/png;base64,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" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+<style>
+  :root {
+    --navy: #17213c;
+    --navy-2: #202f52;
+    --red: #c23b32;
+    --mustard: #e3a13c;
+    --cream: #f6efe1;
+    --paper: #fbf7ee;
+    --charcoal: #211c17;
+    --chalk-white: #f2efe9;
+    --chalk-pink: #e895a6;
+    --chalk-yellow: #ecd06a;
+  }
+  html { scroll-behavior: smooth; }
+  body { background-color: var(--cream); color: var(--charcoal); font-family: 'Work Sans', sans-serif; margin: 0; }
+  .font-display { font-family: 'Anton', sans-serif; letter-spacing: 0.02em; }
+  .leader-row { display: flex; align-items: baseline; gap: 0.5rem; }
+  .leader-row .leader-fill { flex: 1; border-bottom: 2px dotted rgba(33, 28, 23, 0.35); margin-bottom: 5px; }
+  .chalkboard { background-color: #1c1c1c; background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 6px 6px; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: rgba(33,28,23,0.25); border-radius: 999px; }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" data-presets="react">
+const { useState, useEffect, useMemo, useCallback, createContext, useContext } = React;
+
+// ============================================================
+// CONFIGURACIÓN — lo que más vas a querer tocar está acá arriba
+// ============================================================
+
+// Número de WhatsApp donde llegan los pedidos (sin "+", sin espacios).
+const WHATSAPP_NUMBER = '5492302573812';
+
+// Código para entrar como administrador desde el ícono de perfil.
+const ADMIN_CODE = '123123';
+
+const STORE_ADDRESS = '18 entre 11 y 13';
+const DELIVERY_FEE_TEXT = 'Envíos $4.000';
+
+// Credenciales de tu proyecto Supabase.
+const SUPABASE_URL = 'https://dgjlaftklsxxveklxidx.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRnamxhZnRrbHN4eHZla2x4aWR4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIxNjYwNjUsImV4cCI6MjA5Nzc0MjA2NX0.CJLUjR9DaYA6NDQjEOkW-fBVuOOHMD9HJ2RJOM8lAgU';
+
+const LOGO_SRC = 'data:image/png;base64,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';
+
+const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const TABLES = { products: 'freeman_products', promos: 'freeman_promos' };
+
+const money = (n) => `$${Number(n || 0).toLocaleString('es-AR')}`;
+
+// ============================================================
+// CONTEXTO: sesión (nombre del cliente / modo admin)
+// ============================================================
+const SessionContext = createContext(null);
+const STORAGE_KEY = 'freeman_customer_name';
+
+function SessionProvider({ children }) {
+  const [customerName, setCustomerName] = useState('');
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [profileOpen, setProfileOpen] = useState(false);
+
+  useEffect(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) setCustomerName(saved);
+  }, []);
+
+  const submitIdentity = useCallback((value) => {
+    const trimmed = value.trim();
+    if (!trimmed) return null;
+    if (trimmed === ADMIN_CODE) {
+      setIsAdmin(true);
+      return 'admin';
+    }
+    setCustomerName(trimmed);
+    localStorage.setItem(STORAGE_KEY, trimmed);
+    setIsAdmin(false);
+    return 'saved';
+  }, []);
+
+  const logout = useCallback(() => {
+    setIsAdmin(false);
+    setCustomerName('');
+    localStorage.removeItem(STORAGE_KEY);
+  }, []);
+
+  const value = { customerName, isAdmin, submitIdentity, logout, profileOpen, setProfileOpen };
+  return <SessionContext.Provider value={value}>{children}</SessionContext.Provider>;
+}
+const useSession = () => useContext(SessionContext);
+
+// ============================================================
+// CONTEXTO: carrito
+// ============================================================
+const CartContext = createContext(null);
+
+function CartProvider({ children }) {
+  const [items, setItems] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const addItem = useCallback((entry, note = '') => {
+    setItems((prev) => {
+      const key = `${entry.kind}-${entry.id}-${note}`;
+      const existing = prev.find((i) => i.key === key);
+      if (existing) return prev.map((i) => (i.key === key ? { ...i, qty: i.qty + 1 } : i));
+      return [...prev, { key, id: entry.id, kind: entry.kind, name: entry.name, price: entry.price, qty: 1, note }];
+    });
+    setIsOpen(true);
+  }, []);
+
+  const updateQty = useCallback((key, delta) => {
+    setItems((prev) => prev.map((i) => (i.key === key ? { ...i, qty: i.qty + delta } : i)).filter((i) => i.qty > 0));
+  }, []);
+
+  const removeItem = useCallback((key) => setItems((prev) => prev.filter((i) => i.key !== key)), []);
+  const clearCart = useCallback(() => setItems([]), []);
+
+  const total = useMemo(() => items.reduce((sum, i) => sum + i.price * i.qty, 0), [items]);
+  const count = useMemo(() => items.reduce((sum, i) => sum + i.qty, 0), [items]);
+
+  const value = { items, addItem, updateQty, removeItem, clearCart, total, count, isOpen, setIsOpen };
+  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
+}
+const useCart = () => useContext(CartContext);
+
+// ============================================================
+// WhatsApp
+// ============================================================
+function buildOrderMessage(customerName, items, total) {
+  const lines = [];
+  lines.push(`¡Hola Free Man Pizzería! Soy ${customerName} y quiero hacer este pedido:`);
+  lines.push('');
+  items.forEach((i) => {
+    const label = i.kind === 'promo' ? `${i.name} (promo)` : i.name;
+    let line = `• ${i.qty}x ${label} — ${money(i.price * i.qty)}`;
+    if (i.note) line += `\n   Nota: ${i.note}`;
+    lines.push(line);
+  });
+  lines.push('');
+  lines.push(`Total: ${money(total)}`);
+  return lines.join('\n');
+}
+
+function openWhatsAppOrder(customerName, items, total) {
+  const message = buildOrderMessage(customerName, items, total);
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  window.open(url, '_blank', 'noopener,noreferrer');
+}
+
+// ============================================================
+// COMPONENTES
+// ============================================================
+
+function Header() {
+  const { customerName, isAdmin, setProfileOpen, logout } = useSession();
+  const { count, setIsOpen } = useCart();
+  const initial = customerName ? customerName.trim()[0]?.toUpperCase() : null;
+
+  return (
+    <header className="sticky top-0 z-30 bg-[var(--navy)] text-[var(--cream)]">
+      <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+        <div className="flex items-center gap-3">
+          <img src={LOGO_SRC} alt="Free Man Pizzería" className="h-11 w-11 rounded-full" />
+          <span className="font-display text-xl tracking-wide">FREE MAN</span>
+        </div>
+        <div className="flex items-center gap-2">
+          {isAdmin && (
+            <span className="hidden rounded-full bg-[var(--mustard)] px-3 py-1 text-xs font-semibold text-[var(--charcoal)] sm:inline">
+              Modo admin
+            </span>
+          )}
+          <button
+            onClick={() => (customerName || isAdmin ? logout() : setProfileOpen(true))}
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5 text-sm font-semibold transition hover:bg-white/15"
+            title={customerName || isAdmin ? 'Cerrar sesión' : 'Ingresar nombre'}
+          >
+            {isAdmin ? '⚙' : initial || (
+              <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z"/></svg>
+            )}
+          </button>
+          <button
+            onClick={() => setIsOpen(true)}
+            className="relative flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5 transition hover:bg-white/15"
+            title="Ver carrito"
+          >
+            <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current"><path d="M7 4h-2l-1 2v1h2l3.6 7.6-1.4 2.5a1 1 0 0 0 .9 1.5h11v-2h-10.4l1-2h6.8a1 1 0 0 0 .9-.6l3-6.5a1 1 0 0 0-.9-1.4h-13.3l-.7-1.5h-1.5Zm2 15a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm9 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2Z"/></svg>
+            {count > 0 && (
+              <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-[var(--red)] text-[11px] font-bold">
+                {count}
+              </span>
+            )}
+          </button>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+function Hero() {
+  return (
+    <section className="bg-[var(--navy)] pb-14 pt-6 text-[var(--cream)]">
+      <div className="mx-auto flex max-w-5xl flex-col items-center px-4 text-center">
+        <img src={LOGO_SRC} alt="" className="h-28 w-28 rounded-full ring-4 ring-[var(--mustard)]/40" />
+        <h1 className="font-display mt-6 text-4xl leading-none sm:text-5xl">
+          Pizza de barrio, hecha como corresponde
+        </h1>
+        <p className="mt-4 max-w-md text-[var(--cream)]/75">
+          Muzza al molde, empanadas caseras y promos que rinden. Pedís, mandás el WhatsApp y listo.
+        </p>
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm text-[var(--cream)]/70">
+          <span className="rounded-full border border-white/15 px-3 py-1">{STORE_ADDRESS}</span>
+          <span className="rounded-full border border-white/15 px-3 py-1">{DELIVERY_FEE_TEXT}</span>
+        </div>
+        <a href="#menu" className="mt-8 rounded-full bg-[var(--red)] px-7 py-3 font-semibold tracking-wide transition hover:brightness-110">
+          Ver el menú
+        </a>
+      </div>
+    </section>
+  );
+}
+
+function ProfileModal() {
+  const { profileOpen, setProfileOpen, submitIdentity } = useSession();
+  const [value, setValue] = useState('');
+  const [feedback, setFeedback] = useState(null);
+
+  if (!profileOpen) return null;
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const result = submitIdentity(value);
+    if (result === 'admin') {
+      setFeedback('admin');
+      setTimeout(() => { setProfileOpen(false); setFeedback(null); setValue(''); }, 900);
+    } else if (result === 'saved') {
+      setProfileOpen(false);
+      setValue('');
+    }
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/50 p-4 sm:items-center" onClick={() => setProfileOpen(false)}>
+      <div className="w-full max-w-sm rounded-2xl bg-[var(--paper)] p-6 shadow-xl" onClick={(e) => e.stopPropagation()}>
+        {feedback === 'admin' ? (
+          <p className="text-center font-display text-lg text-[var(--navy)]">Modo administrador activado ✓</p>
+        ) : (
+          <>
+            <h2 className="font-display text-xl text-[var(--navy)]">¿Quién sos?</h2>
+            <p className="mt-1 text-sm text-[var(--charcoal)]/70">
+              Poné tu nombre y apellido: lo vamos a usar para firmar tu pedido de WhatsApp.
+            </p>
+            <form onSubmit={handleSubmit} className="mt-4 flex flex-col gap-3">
+              <input autoFocus value={value} onChange={(e) => setValue(e.target.value)} placeholder="Nombre y apellido"
+                className="rounded-lg border border-black/15 bg-white px-4 py-2.5 outline-none focus:border-[var(--navy)]" />
+              <button type="submit" className="rounded-lg bg-[var(--navy)] py-2.5 font-semibold text-[var(--cream)] transition hover:bg-[var(--navy-2)]">
+                Continuar
+              </button>
+              <button type="button" onClick={() => setProfileOpen(false)} className="text-sm text-[var(--charcoal)]/60 underline-offset-2 hover:underline">
+                Cancelar
+              </button>
+            </form>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function PromoFormModal({ promo, onClose, onSaved }) {
+  const isNew = !promo.id;
+  const [title, setTitle] = useState(promo.title || '');
+  const [description, setDescription] = useState(promo.description || '');
+  const [price, setPrice] = useState(promo.price ?? '');
+  const [active, setActive] = useState(promo.active ?? true);
+  const [saving, setSaving] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSaving(true);
+    const payload = { title, description, price: Number(price) || 0, active };
+    if (isNew) await db.from(TABLES.promos).insert(payload);
+    else await db.from(TABLES.promos).update(payload).eq('id', promo.id);
+    setSaving(false);
+    onSaved();
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/50 p-4 sm:items-center" onClick={onClose}>
+      <form onSubmit={handleSubmit} onClick={(e) => e.stopPropagation()} className="w-full max-w-sm rounded-2xl bg-[var(--paper)] p-6 shadow-xl">
+        <h2 className="font-display text-xl text-[var(--navy)]">{isNew ? 'Nueva promo' : 'Editar promo'}</h2>
+        <label className="mt-4 block text-sm font-medium">Título</label>
+        <input required value={title} onChange={(e) => setTitle(e.target.value)} className="mt-1 w-full rounded-lg border border-black/15 bg-white px-3 py-2" placeholder="Ej: 1 Muzza + 1 Docena" />
+        <label className="mt-3 block text-sm font-medium">Detalle (opcional)</label>
+        <input value={description} onChange={(e) => setDescription(e.target.value)} className="mt-1 w-full rounded-lg border border-black/15 bg-white px-3 py-2" />
+        <label className="mt-3 block text-sm font-medium">Precio</label>
+        <input required type="number" min="0" value={price} onChange={(e) => setPrice(e.target.value)} className="mt-1 w-full rounded-lg border border-black/15 bg-white px-3 py-2" />
+        <label className="mt-3 flex items-center gap-2 text-sm">
+          <input type="checkbox" checked={active} onChange={(e) => setActive(e.target.checked)} /> Visible en la web
+        </label>
+        <div className="mt-5 flex gap-2">
+          <button type="submit" disabled={saving} className="flex-1 rounded-lg bg-[var(--navy)] py-2.5 font-semibold text-[var(--cream)] disabled:opacity-60">
+            {saving ? 'Guardando…' : 'Guardar'}
+          </button>
+          <button type="button" onClick={onClose} className="rounded-lg border border-black/15 px-4 py-2.5">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  );
+}
+
+const chalkColors = ['text-[var(--chalk-white)]', 'text-[var(--chalk-pink)]', 'text-[var(--chalk-yellow)]'];
+
+function PromoBoard() {
+  const [promos, setPromos] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [editing, setEditing] = useState(null);
+  const { isAdmin } = useSession();
+  const { addItem } = useCart();
+
+  const load = async () => {
+    setLoading(true);
+    const { data, error } = await db.from(TABLES.promos).select('*').order('sort_order', { ascending: true });
+    if (!error) setPromos(data || []);
+    setLoading(false);
+  };
+
+  useEffect(() => { load(); }, []);
+
+  const visible = isAdmin ? promos : promos.filter((p) => p.active);
+
+  const handleDelete = async (id) => {
+    if (!confirm('¿Eliminar esta promo?')) return;
+    await db.from(TABLES.promos).delete().eq('id', id);
+    load();
+  };
+
+  if (!loading && visible.length === 0 && !isAdmin) return null;
+
+  return (
+    <section className="mx-auto -mt-8 max-w-5xl px-4">
+      <div className="chalkboard rounded-2xl border-8 border-[#3a2b1c] p-6 shadow-xl sm:p-8">
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="font-display text-2xl text-[var(--chalk-yellow)]">Promos de hoy</h2>
+          {isAdmin && (
+            <button onClick={() => setEditing({})} className="rounded-full bg-[var(--mustard)] px-3 py-1 text-xs font-semibold text-[var(--charcoal)]">
+              + Agregar promo
+            </button>
+          )}
+        </div>
+        <div className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
+          {visible.map((promo, idx) => (
+            <div key={promo.id} className={`group ${promo.active ? '' : 'opacity-40'}`}>
+              <div className="flex items-start justify-between gap-3">
+                <p className={`font-display text-lg leading-tight ${chalkColors[idx % chalkColors.length]}`}>{promo.title}</p>
+                <p className="font-display whitespace-nowrap text-lg text-[var(--chalk-yellow)]">{money(promo.price)}</p>
+              </div>
+              {promo.description && <p className="text-xs text-white/50">{promo.description}</p>}
+              <div className="mt-1 flex gap-3">
+                <button onClick={() => addItem({ id: promo.id, kind: 'promo', name: promo.title, price: promo.price })}
+                  className="text-xs font-semibold text-[var(--chalk-white)] underline decoration-dotted underline-offset-4 hover:text-[var(--mustard)]">
+                  Agregar al pedido
+                </button>
+                {isAdmin && (
+                  <>
+                    <button onClick={() => setEditing(promo)} className="text-xs text-white/50 hover:text-white">Editar</button>
+                    <button onClick={() => handleDelete(promo.id)} className="text-xs text-white/50 hover:text-red-300">Eliminar</button>
+                  </>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      {editing !== null && (
+        <PromoFormModal promo={editing} onClose={() => setEditing(null)} onSaved={() => { setEditing(null); load(); }} />
+      )}
+    </section>
+  );
+}
+
+function ProductFormModal({ product, defaultCategory, onClose, onSaved }) {
+  const isNew = !product.id;
+  const CATEGORIES = [
+    { value: 'pizzas', label: 'Pizzas' },
+    { value: 'empanadas', label: 'Empanadas' },
+    { value: 'especialidades', label: 'Especialidades' },
+  ];
+  const [name, setName] = useState(product.name || '');
+  const [category, setCategory] = useState(product.category || defaultCategory || 'pizzas');
+  const [price, setPrice] = useState(product.price ?? '');
+  const [description, setDescription] = useState(product.description || '');
+  const [active, setActive] = useState(product.active ?? true);
+  const [saving, setSaving] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSaving(true);
+    const payload = { name, category, price: Number(price) || 0, description, active };
+    if (isNew) await db.from(TABLES.products).insert(payload);
+    else await db.from(TABLES.products).update(payload).eq('id', product.id);
+    setSaving(false);
+    onSaved();
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/50 p-4 sm:items-center" onClick={onClose}>
+      <form onSubmit={handleSubmit} onClick={(e) => e.stopPropagation()} className="w-full max-w-sm rounded-2xl bg-[var(--paper)] p-6 shadow-xl">
+        <h2 className="font-display text-xl text-[var(--navy)]">{isNew ? 'Nuevo producto' : 'Editar producto'}</h2>
+        <label className="mt-4 block text-sm font-medium">Nombre</label>
+        <input required value={name} onChange={(e) => setName(e.target.value)} className="mt-1 w-full rounded-lg border border-black/15 bg-white px-3 py-2" />
+        <label className="mt-3 block text-sm font-medium">Categoría</label>
+        <select value={category} onChange={(e) => setCategory(e.target.value)} className="mt-1 w-full rounded-lg border border-black/15 bg-white px-3 py-2">
+          {CATEGORIES.map((c) => <option key={c.value} value={c.value}>{c.label}</option>)}
+        </select>
+        <label className="mt-3 block text-sm font-medium">Precio</label>
+        <input required type="number" min="0" value={price} onChange={(e) => setPrice(e.target.value)} className="mt-1 w-full rounded-lg border border-black/15 bg-white px-3 py-2" />
+        <label className="mt-3 block text-sm font-medium">Descripción (opcional)</label>
+        <textarea value={description} onChange={(e) => setDescription(e.target.value)} rows={2} className="mt-1 w-full rounded-lg border border-black/15 bg-white px-3 py-2" placeholder="Ej: sabores disponibles, ingredientes, etc." />
+        <label className="mt-3 flex items-center gap-2 text-sm">
+          <input type="checkbox" checked={active} onChange={(e) => setActive(e.target.checked)} /> Visible en la web
+        </label>
+        <div className="mt-5 flex gap-2">
+          <button type="submit" disabled={saving} className="flex-1 rounded-lg bg-[var(--navy)] py-2.5 font-semibold text-[var(--cream)] disabled:opacity-60">
+            {saving ? 'Guardando…' : 'Guardar'}
+          </button>
+          <button type="button" onClick={onClose} className="rounded-lg border border-black/15 px-4 py-2.5">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  );
+}
+
+function ProductRow({ product, onEdit, onDelete }) {
+  const { addItem } = useCart();
+  const { isAdmin } = useSession();
+  const [noteOpen, setNoteOpen] = useState(false);
+  const [note, setNote] = useState('');
+
+  const handleAdd = () => {
+    addItem({ id: product.id, kind: 'product', name: product.name, price: product.price }, note.trim());
+    setNote('');
+    setNoteOpen(false);
+  };
+
+  return (
+    <li className={`py-3 ${product.active ? '' : 'opacity-40'}`}>
+      <div className="leader-row">
+        <span className="font-medium">{product.name}</span>
+        <span className="leader-fill" />
+        <span className="font-display text-[var(--red)]">{money(product.price)}</span>
+      </div>
+      {product.description && <p className="mt-0.5 text-xs text-[var(--charcoal)]/60">{product.description}</p>}
+      <div className="mt-1.5 flex flex-wrap items-center gap-3 text-sm">
+        <button onClick={handleAdd} className="font-semibold text-[var(--navy)] hover:underline">+ Agregar</button>
+        <button onClick={() => setNoteOpen((v) => !v)} className="text-[var(--charcoal)]/60 hover:underline">
+          {noteOpen ? 'Cerrar nota' : 'Agregar con nota'}
+        </button>
+        {isAdmin && (
+          <>
+            <button onClick={() => onEdit(product)} className="text-[var(--charcoal)]/60 hover:underline">Editar</button>
+            <button onClick={() => onDelete(product.id)} className="text-[var(--charcoal)]/60 hover:text-[var(--red)] hover:underline">Eliminar</button>
+          </>
+        )}
+      </div>
+      {noteOpen && (
+        <div className="mt-2 flex gap-2">
+          <input autoFocus value={note} onChange={(e) => setNote(e.target.value)} placeholder="Ej: sabores de la docena, sin cebolla, etc."
+            className="flex-1 rounded-lg border border-black/15 bg-white px-3 py-1.5 text-sm" />
+          <button onClick={handleAdd} className="rounded-lg bg-[var(--navy)] px-3 py-1.5 text-sm font-semibold text-[var(--cream)]">Agregar</button>
+        </div>
+      )}
+    </li>
+  );
+}
+
+const CATEGORY_LABELS = { pizzas: 'Pizzas', empanadas: 'Empanadas', especialidades: 'Especialidades' };
+const CATEGORY_ORDER = ['pizzas', 'empanadas', 'especialidades'];
+
+function MenuSection() {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [editing, setEditing] = useState(null);
+  const [newCategory, setNewCategory] = useState(null);
+  const { isAdmin } = useSession();
+
+  const load = async () => {
+    setLoading(true);
+    const { data, error } = await db.from(TABLES.products).select('*').order('sort_order', { ascending: true });
+    if (!error) setProducts(data || []);
+    setLoading(false);
+  };
+
+  useEffect(() => { load(); }, []);
+
+  const handleDelete = async (id) => {
+    if (!confirm('¿Eliminar este producto?')) return;
+    await db.from(TABLES.products).delete().eq('id', id);
+    load();
+  };
+
+  const grouped = CATEGORY_ORDER.map((cat) => ({
+    key: cat,
+    label: CATEGORY_LABELS[cat],
+    items: products.filter((p) => p.category === cat && (isAdmin || p.active)),
+  })).filter((g) => g.items.length > 0 || isAdmin);
+
+  return (
+    <section id="menu" className="mx-auto max-w-5xl px-4 py-14">
+      <h2 className="font-display text-center text-3xl text-[var(--navy)]">Nuestro menú</h2>
+      <p className="mx-auto mt-2 max-w-md text-center text-sm text-[var(--charcoal)]/60">
+        Todo hecho al momento. Elegí, agregá al pedido y lo mandamos por WhatsApp.
+      </p>
+      {loading && <p className="mt-8 text-center text-sm text-[var(--charcoal)]/50">Cargando menú…</p>}
+      <div className="mt-10 grid gap-10 sm:grid-cols-2">
+        {grouped.map((group) => (
+          <div key={group.key}>
+            <div className="mb-2 flex items-center justify-between border-b-2 border-[var(--navy)] pb-1">
+              <h3 className="font-display text-lg text-[var(--navy)]">{group.label}</h3>
+              {isAdmin && (
+                <button onClick={() => setNewCategory(group.key)} className="text-xs font-semibold text-[var(--red)] hover:underline">+ Agregar</button>
+              )}
+            </div>
+            <ul className="divide-y divide-black/5">
+              {group.items.map((product) => (
+                <ProductRow key={product.id} product={product} onEdit={setEditing} onDelete={handleDelete} />
+              ))}
+              {group.items.length === 0 && <li className="py-3 text-sm text-[var(--charcoal)]/40">Todavía no hay productos acá.</li>}
+            </ul>
+          </div>
+        ))}
+      </div>
+      {editing && <ProductFormModal product={editing} onClose={() => setEditing(null)} onSaved={() => { setEditing(null); load(); }} />}
+      {newCategory && (
+        <ProductFormModal product={{}} defaultCategory={newCategory} onClose={() => setNewCategory(null)} onSaved={() => { setNewCategory(null); load(); }} />
+      )}
+    </section>
+  );
+}
+
+function Cart() {
+  const { items, updateQty, removeItem, total, isOpen, setIsOpen, clearCart } = useCart();
+  const { customerName, setProfileOpen } = useSession();
+
+  if (!isOpen) return null;
+
+  const handleCheckout = () => {
+    if (!customerName) { setIsOpen(false); setProfileOpen(true); return; }
+    openWhatsAppOrder(customerName, items, total);
+  };
+
+  return (
+    <div className="fixed inset-0 z-40 flex justify-end bg-black/50" onClick={() => setIsOpen(false)}>
+      <aside className="flex h-full w-full max-w-sm flex-col bg-[var(--paper)] shadow-xl" onClick={(e) => e.stopPropagation()}>
+        <div className="flex items-center justify-between border-b border-black/10 px-5 py-4">
+          <h2 className="font-display text-xl text-[var(--navy)]">Tu pedido</h2>
+          <button onClick={() => setIsOpen(false)} className="text-2xl leading-none text-[var(--charcoal)]/50">×</button>
+        </div>
+        <div className="flex-1 overflow-y-auto px-5 py-4">
+          {items.length === 0 ? (
+            <p className="mt-8 text-center text-sm text-[var(--charcoal)]/50">Todavía no agregaste nada. Elegí algo del menú para empezar.</p>
+          ) : (
+            <ul className="space-y-4">
+              {items.map((item) => (
+                <li key={item.key} className="flex items-start justify-between gap-3">
+                  <div className="flex-1">
+                    <p className="font-medium">{item.name}</p>
+                    {item.note && <p className="text-xs text-[var(--charcoal)]/60">Nota: {item.note}</p>}
+                    <p className="text-sm text-[var(--red)]">{money(item.price * item.qty)}</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <button onClick={() => updateQty(item.key, -1)} className="h-7 w-7 rounded-full border border-black/15 text-sm">−</button>
+                    <span className="w-4 text-center text-sm">{item.qty}</span>
+                    <button onClick={() => updateQty(item.key, 1)} className="h-7 w-7 rounded-full border border-black/15 text-sm">+</button>
+                  </div>
+                  <button onClick={() => removeItem(item.key)} className="text-xs text-[var(--charcoal)]/40 hover:text-[var(--red)]">Quitar</button>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+        {items.length > 0 && (
+          <div className="border-t border-black/10 px-5 py-4">
+            <div className="mb-3 flex items-center justify-between font-display text-lg text-[var(--navy)]">
+              <span>Total</span><span>{money(total)}</span>
+            </div>
+            {customerName && <p className="mb-2 text-xs text-[var(--charcoal)]/50">Pedido a nombre de {customerName}</p>}
+            <button onClick={handleCheckout} className="w-full rounded-full bg-[#25D366] py-3 font-semibold text-white transition hover:brightness-95">
+              Enviar pedido por WhatsApp
+            </button>
+            <button onClick={clearCart} className="mt-2 w-full text-center text-xs text-[var(--charcoal)]/50 hover:underline">Vaciar carrito</button>
+          </div>
+        )}
+      </aside>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="bg-[var(--navy)] py-8 text-center text-sm text-[var(--cream)]/60">
+      <p className="font-display text-lg text-[var(--cream)]">FREE MAN</p>
+      <p className="mt-1">{STORE_ADDRESS}</p>
+      <p className="mt-1">Pedidos por WhatsApp · ¡Gracias por elegirnos!</p>
+    </footer>
+  );
+}
+
+function App() {
+  return (
+    <SessionProvider>
+      <CartProvider>
+        <Header />
+        <Hero />
+        <PromoBoard />
+        <MenuSection />
+        <Footer />
+        <Cart />
+        <ProfileModal />
+      </CartProvider>
+    </SessionProvider>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
