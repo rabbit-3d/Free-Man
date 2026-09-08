@@ -46,7 +46,7 @@
 <body>
 <div id="root"></div>
 
-<script type="text/babel" data-presets="react">
+<script type="text/plain" id="app-source">
 const { useState, useEffect, useMemo, useCallback, createContext, useContext } = React;
 
 // ============================================================
@@ -646,6 +646,20 @@ function App() {
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+
+<script>
+  // Transformamos manualmente el JSX de arriba (forzando el modo
+  // "classic", que usa React.createElement) y lo ejecutamos. Esto
+  // evita que Babel intente insertar "import" statements automáticos,
+  // que rompen cuando el script no es type="module".
+  var __source = document.getElementById('app-source').textContent;
+  var __compiled = Babel.transform(__source, {
+    presets: [['react', { runtime: 'classic' }]],
+  }).code;
+  var __script = document.createElement('script');
+  __script.text = __compiled;
+  document.body.appendChild(__script);
 </script>
 </body>
 </html>
